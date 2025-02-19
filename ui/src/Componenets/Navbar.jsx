@@ -59,7 +59,7 @@ export default function Header() {
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
-      className={`border border-gray-200 bg-gray-100 transition-all ${isNavbarVisible ? 'top-0' : '-top-24'} fixed w-full`}
+      className={`border border-gray-100 bg-gray-50 transition-all ${isNavbarVisible ? 'top-0' : '-top-24'} fixed w-full`}
     >
       <NavbarContent>
         <NavbarMenuToggle
