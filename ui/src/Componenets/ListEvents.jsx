@@ -24,7 +24,9 @@ const events = [
 
 function ListEvents() {
   return (
-    <div className={`flex justify-between gap-5}`}>
+    <div
+      className={`max-w-7xl mx-auto md:p-6 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8`}
+    >
       {events.map((event, index) => (
         <div key={index}>
           <CardEvent event={event} />

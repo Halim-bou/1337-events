@@ -1,13 +1,13 @@
 import { Image } from "@heroui/react";
+import th_logo from '../assets/1337.jpg';
+import um6p from '../assets/um6p.png';
+import youcode from '../assets/youcode.jpeg'
 
 export default function Sponsors() {
   const sponsors = [
-    "https://heroui.com/images/hero-card.jpeg",
-    "https://heroui.com/images/hero-card.jpeg",
-    "https://heroui.com/images/hero-card.jpeg",
-    "https://heroui.com/images/hero-card.jpeg",
-    "https://heroui.com/images/hero-card.jpeg",
-    "https://heroui.com/images/hero-card.jpeg",
+    th_logo,
+    um6p,
+    youcode,
   ];
 
   return (

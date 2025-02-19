@@ -1,37 +1,37 @@
-import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './Componenets/Navbar.jsx';
-import Footer from './Componenets/Footer.jsx';
-import Hero from './Componenets/Hero.jsx'
-import ListEvents from './Componenets/ListEvents.jsx';
-import LatestEvent from './Componenets/LatestEvnt.jsx';
-import Sponsors from './Componenets/Sponsors.jsx';
+import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./Componenets/Navbar.jsx";
+import Footer from "./Componenets/Footer.jsx";
+import Hero from "./Componenets/Hero.jsx";
+import ListEvents from "./Componenets/ListEvents.jsx";
+import LatestEvent from "./Componenets/LatestEvnt.jsx";
+import Sponsors from "./Componenets/Sponsors.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
   return (
     <Router>
       <div>
-      <Header />
-      <Hero />
-      <div>
+        <Header />
+        <Hero />
         <div>
-          <p className='text-3xl px-10 relative -mt-52'>Upcoming Events</p>
+          <div>
+            <p className=" max-w-7xl mx-auto md:p-6 p-4   text-3xl mt-20 relative ">Upcoming Events</p>
+          </div>
+          <ListEvents />
         </div>
-        <ListEvents />
-      </div>
-      <LatestEvent />
-      <div>
+        <LatestEvent />
         <div>
-          <p className='text-3xl px-10 relative'>Blogs & Articles</p>
+          <div>
+            <p className=" max-w-7xl mx-auto md:p-6 p-4 text-3xl px-10 relative">Blogs & Articles</p>
+          </div>
+          <ListEvents />
         </div>
-        <ListEvents />
+        <Sponsors />
+        <Footer />
       </div>
-      <Sponsors />
-      <Footer />
-      </div>
-    </ Router>
+    </Router>
   );
 }
 
-export default App
+export default App;

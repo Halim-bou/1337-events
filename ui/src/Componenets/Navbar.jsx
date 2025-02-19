@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from '../assets/logo.png';
+import logo_2 from '../assets/1337_2.png';
 import {
   Navbar,
   NavbarBrand,
@@ -18,7 +19,7 @@ export const AcmeLogo = () => {
     <img
       src={logo}
       alt="1337-events Logo"
-      className="w-50 h-24"
+      className="w-32 h-18"
     />
 	</a>
   );
