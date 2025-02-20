@@ -4,59 +4,42 @@ import CardEvent from "./CardEvent";
 const events = [
   {
     imgUrl: "https://images-ext-1.discordapp.net/external/e6FiSmhiQo2i6MI-KRVb-Gg78-nMHvOMQkpy-DDSB2c/https/i.imgur.com/hZRH0sr.jpg?format=webp&width=832&height=468",
-    title: "UM6P Sustainable Development",
+    title: "Green Gallop",
     description:
-      "Body text for whatever you’d like to add more to the subheading. ",
+      "Green Gallop – Join us for an exciting eco-friendly run! Celebrate sustainability and fitness as we race towards a greener future. Lace up, go green, and gallop for the planet!",
   },
   {
-    imgUrl: "",
-    title: "UM6P Sustainable Development",
+    imgUrl: "https://images-ext-1.discordapp.net/external/KDDMfZ3heE6NcvA2XW0OeadAGbntUmNH-QDMgW9jPY0/https/i.imgur.com/ybcOrPz.jpg?format=webp&width=468&height=467",
+    title: "Friendly Chess Competition",
     description:
-      "Body text for whatever you’d like to add more to the subheading. ",
+      "Join us for a fun and friendly chess challenge! All skill levels welcome.",
   },
   {
-    imgUrl: "",
-    title: "UM6P Sustainable Development",
+    imgUrl: "https://images-ext-1.discordapp.net/external/mzxv-ZUOs1T4yyczYLDWGOvgZhklPiDI2pmpptsRURs/https/i.imgur.com/6oYjuQY.jpg?format=webp&width=331&height=468",
+    title: "Global Game Jam",
     description:
-      "Body text for whatever you’d like to add more to the subheading. ",
+      "The Global Game Jam is an annual event where game developers worldwide create games in 48 hours, collaborating around a shared theme to foster creativity and innovation.",
   },
   {
-    imgUrl: "",
-    title: "UM6P Sustainable Development",
+    imgUrl: "https://images-ext-1.discordapp.net/external/j9036gG8PboFY40wkxyTRiZILhUF5Zd71Km1OD2vbio/https/i.imgur.com/wezxF98.jpg?format=webp&width=468&height=468",
+    title: "UM6P Explorer INFO session",
     description:
-      "Body text for whatever you’d like to add more to the subheading. ",
+      "The \"UM6P Explorer INFO Session\" is a brief event to introduce the UM6P Explorer program, covering its opportunities, application process, and benefits. It’s a great chance to learn more and connect with program representatives.",
   },
   {
-    imgUrl: "",
-    title: "UM6P Sustainable Development",
+    imgUrl: "https://images-ext-1.discordapp.net/external/6cO8jMgFUre5Ix9DdOk7buXTR9edDJtSiGMEb18Ltg8/https/i.imgur.com/FC0jpbt.jpg?format=webp&width=832&height=468",
+    title: "Give Blood Give Life",
     description:
-      "Body text for whatever you’d like to add more to the subheading. ",
+      "Give Blood, Give Life is a charitable event aimed at encouraging individuals to donate blood and help save lives. It emphasizes the vital role of blood donations in supporting patients in need of medical care, highlighting the simple yet impactful act of giving blood as a way to make a difference in someone's life.",
   },
   {
-    imgUrl: "",
-    title: "UM6P Sustainable Development",
+    imgUrl: "https://images-ext-1.discordapp.net/external/Phxyjyjn0gMyLTytYBxrdKsaMy8y9qxd3fdjXPFD9q0/https/i.imgur.com/PKilsH2.jpg?format=webp&width=374&height=467",
+    title: "Shadowing Day",
     description:
-      "Body text for whatever you’d like to add more to the subheading. ",
-  },
-  {
-    imgUrl: "",
-    title: "UM6P Sustainable Development",
-    description:
-      "Body text for whatever you’d like to add more to the subheading. ",
-  },
-  {
-    imgUrl: "",
-    title: "UM6P Sustainable Development",
-    description:
-      "Body text for whatever you’d like to add more to the subheading. ",
-  },
-  {
-    imgUrl: "",
-    title: "UM6P Sustainable Development",
-    description:
-      "Body text for whatever you’d like to add more to the subheading. ",
+      "Shadowing Day is an opportunity for individuals to observe and learn from experienced professionals in their field. Participants will follow mentors throughout their day to gain firsthand insight into their roles, tasks, and responsibilities, enhancing their understanding of the job and industry.",
   },
 ];
+
 
 function ListEvents({ maxEvents = 3 }) {
   const eventsToShow = maxEvents === 'all' || maxEvents < 0 ? events : events.slice(0, maxEvents);

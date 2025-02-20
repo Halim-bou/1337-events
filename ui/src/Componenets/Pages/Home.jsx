@@ -2,6 +2,7 @@ import Hero from "../Hero";
 import LatestEvent from "../LatestEvnt";
 import ListEvents from "../ListEvents";
 import Sponsors from "../Sponsors";
+import ListBlogs from "../ListBlogs";
 
 export default function Home() {
 	return (
@@ -18,7 +19,7 @@ export default function Home() {
           <div>
             <p className=" max-w-7xl mx-auto md:p-6 p-4 text-3xl px-10 relative">Blogs & Articles</p>
           </div>
-          <ListEvents />
+          <ListBlogs />
         </div>
         <Sponsors />
 		</>

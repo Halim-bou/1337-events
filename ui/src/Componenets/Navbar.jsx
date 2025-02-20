@@ -85,7 +85,7 @@ export default function Header({inLoginPage = 0}) {
             Events
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
+        <NavbarItem>
           <Link color="foreground" href="/Blogs">
             Blogs
           </Link>
@@ -95,15 +95,17 @@ export default function Header({inLoginPage = 0}) {
   {inLoginPage !== 1 && (
     <NavbarItem className="rounded-full hover:bg-gray-200 focus:outline lg:flex">
       <Button as={Link} href="/Login" className="bg-slate-200 text-gray-900">
-        Sign in
+        Login
       </Button>
     </NavbarItem>
   )}
-  <NavbarItem className="rounded-full hover:bg-gray-200 focus:outline hidden lg:flex">
-    <Button as={Link} href="#" className="bg-slate-900 text-gray-100">
-      Sign Up
+  {inLoginPage !== 2 && (
+  <NavbarItem className="rounded-full hover:bg-gray-200 focus:outline flex">
+    <Button as={Link} href="/Register" className="bg-slate-900 text-gray-100">
+      Register
     </Button>
   </NavbarItem>
+  )}
 </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (

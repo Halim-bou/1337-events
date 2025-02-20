@@ -1,9 +1,9 @@
-import ListEvents from "../ListEvents";
+import ListBlogs from "../ListBlogs";
 
 export default function PageBlogs() {
 	return (
 		<div className="relative my-20">
-		<ListEvents maxEvents='all'/>
+		<ListBlogs maxBlogs='all'/>
 		</div>
 	  );
 }

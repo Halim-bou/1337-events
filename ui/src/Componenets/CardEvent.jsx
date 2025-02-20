@@ -8,10 +8,10 @@ import {
   Button,
 } from "@material-tailwind/react";
 
-function CardEvent({ event }) {
+function CardEvent({ event, session = 0 }) {
   return (
-    <div className="flex justify-center ">
-      <Card className=" w-auto">
+    <div className="flex justify-center">
+      <Card className="w-95 h-[450px] flex flex-col justify-between">
         <CardHeader
           color="blue-gray"
           className="relative h-56 rounded-md bg-cover mx-2 my-2 object-contain"
@@ -21,29 +21,28 @@ function CardEvent({ event }) {
             backgroundPosition: "center",
           }}
         >
-          {/* <img
-            className="w-full h-full"
-            src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-            alt="card-image"
-          /> */}
         </CardHeader>
         <CardBody>
           <Typography variant="h5" color="blue-gray" className="mt-2 px-3">
-            UI/UX Review Check
+            {event.title}
           </Typography>
           <Typography className="px-3 py-2">
-            The place is close to Barceloneta Beach and bus stop just 2 min by
-            walk and near to &quot;Naviglio&quot; where you can enjoy the main
-            night life in Barcelona.
+            {event.description}
           </Typography>
         </CardBody>
         <CardFooter className="px-5 py-4">
-          <Button className="bg-slate-600">Read More</Button>
+          {session === 0 ? (
+            <>
+            <Button className="bg-slate-600">Reserve</Button>
+            </>
+          ):
+          (
+            <>
+            <Button className="bg-slate-600">Read more</Button>
+            </>
+          )}
         </CardFooter>
       </Card>
-      {/* <div>{event.imgUrl}</div>
-      <div>{event.title}</div>
-      <div>{event.description}</div> */}
     </div>
   );
 }

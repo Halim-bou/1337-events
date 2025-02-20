@@ -6,14 +6,18 @@ import Home from "./Componenets/Pages/Home.jsx";
 import PageEvents from "./Componenets/Pages/EventsPage.jsx";
 import PageBlogs from "./Componenets/Pages/Blogs.jsx";
 import Login from "./Componenets/Pages/Login.jsx";
+import Register from "./Componenets/Pages/Register.jsx";
 
 function AppContent() {
   const location = useLocation();
   const isLoginPage = location.pathname === "/Login";
+  const isRegisterPage = location.pathname === "/Register";
 
   return (
     <div>
-      {isLoginPage ? <Header inLoginPage={1}/> : <Header />}
+      {isLoginPage && <Header inLoginPage={1}/>}
+      {isRegisterPage && <Header inLoginPage={2}/>}
+      {!isLoginPage && !isRegisterPage && <Header />}
 
       <main className="flex-grow">
         <Routes>
@@ -21,9 +25,10 @@ function AppContent() {
           <Route path="Events" element={<PageEvents />} />
           <Route path="Blogs" element={<PageBlogs />} />
           <Route path="Login" element={<Login />} />
+          <Route path="Register" element={<Register />} />
         </Routes>
       </main>
-      {!isLoginPage && <Footer />}
+      {!isLoginPage && !isRegisterPage && <Footer />}
     </div>
   );
 }

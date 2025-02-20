@@ -7,7 +7,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 
-export default function LatestEvent() {
+export default function LatestEvent({event}) {
   return (
     <div className="relative my-20">
       <Card className="max-w-7xl mx-auto md:p-6 p-4 lg:max-h-[60vh] flex-col lg:flex-row">
@@ -17,7 +17,7 @@ export default function LatestEvent() {
           className="m-0 lg:w-2/5 shrink-0 sm:rounded-md rounded-l-md rounded-r-none"
         >
           <img
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+            src="https://media-hosting.imagekit.io//4608ad878d1345b1/t%C3%A9l%C3%A9chargement_2.png?Expires=1834637130&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=bCBWnsv3oNBd6W-6o~VVEi8LcTNlO0nQc-ojnkZE9bHXzIKOK4a3I-BQMjyQKO8~2cRK2Tjmfp3CWqs0uhracPk6RMAfxVmxQ93bJJsID-fAxbZM4LMfEeMuKxQw7e8v4sHEmiyZQ2qylIDwsd-AJisiKBFGT5GMDOhYxcFBZ37Bq9-YlUCiWgL0LLbLNkhw1hSSU3tuk7TnH0G1lqL2TKAx9Xh9OYE7PoYl-wgXwD7Gi4YuIKGgOSwC2JoR0TeTvPYrA9iQF2Kh0DbgNzNGIFHIamP2QKo3PsiS760PPTy9bvgs6pNpxxkQT5-eBRzgEmvNDJB3ZJMlrQ5W3grbCA__"
             alt="card-image"
             className="h-full w-full object-cover"
           />
@@ -27,16 +27,10 @@ export default function LatestEvent() {
             Latest Event
           </Typography>
           <Typography variant="h4" color="blue-gray" className="mb-2 px-4 ">
-            UM6P Sustainable Development
+          Times UM6P
           </Typography>
           <Typography color="gray" className="mb-8 px-4 font-normal">
-            Body text for whatever you’d like to add more to the subheading.
-            Body text for whatever you’d like to add more to the subheading.
-            Body text for whatever you’d like to add more to the subheading.
-            Body text for whatever you’d like to add more to the subheading.
-            Body text for whatever you’d like to add more to the subheading.
-            Body text for whatever you’d like to add more to the subheading.
-            Body text for whatever you’d like to add more to the subheading.
+          Times UM6P is the ultimate source for the latest news, insights, and discussions centered around the University Mohammed VI Polytechnic (UM6P) community. Whether you’re a student, faculty member, or part of the broader academic world, Tmes UM6P offers engaging content that dives into university events, research breakthroughs, student life, and much more. Stay connected with us for inspiring stories, thought-provoking articles, and an insider’s view into the dynamic academic environment of UM6P. Join the conversation and explore the world of knowledge and innovation shaping the future at UM6P
           </Typography>
           <a href="#" className="inline-block">
             <Button variant="text" className="flex items-center gap-2">
