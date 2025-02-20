@@ -21,11 +21,11 @@ function AppContent() {
 
       <main className="flex-grow">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="Events" element={<PageEvents />} />
-          <Route path="Blogs" element={<PageBlogs />} />
-          <Route path="Login" element={<Login />} />
-          <Route path="Register" element={<Register />} />
+          <Route path="1337-events/" element={<Home />} />
+          <Route path="1337-events/Events" element={<PageEvents />} />
+          <Route path="1337-events/Blogs" element={<PageBlogs />} />
+          <Route path="1337-events/Login" element={<Login />} />
+          <Route path="1337-events/Register" element={<Register />} />
         </Routes>
       </main>
       {!isLoginPage && !isRegisterPage && <Footer />}

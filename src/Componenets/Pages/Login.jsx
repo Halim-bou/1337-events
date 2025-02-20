@@ -14,7 +14,7 @@ export default function Login({isloginPage = 0}) {
 			>
 		</div>
         <div className="w-full p-8 lg:w-1/2">
-			<a href="/" className='flex justify-center'>
+			<a href="/1337-events/" className='flex justify-center'>
     			<img
       				src={logo}
       				alt="1337-events Logo"
@@ -57,26 +57,26 @@ export default function Login({isloginPage = 0}) {
             {isloginPage === 1 ? (
             <>
             <div className="mt-8">
-                <a href="/">
+                <a href="/1337-events/">
                 <button className="bg-gray-700 text-white font-bold py-2 px-4 w-full rounded hover:bg-gray-600">Register</button>
                 </a>
             </div>
             <div className="mt-4 flex items-center justify-between">
                 <span className="border-b w-1/5 md:w-1/4"></span>
-                    <a href="/Login" className="text-xs text-gray-500 uppercase">or Login</a>
+                    <a href="/1337-events/Login" className="text-xs text-gray-500 uppercase">or Login</a>
                 <span className="border-b w-1/5 md:w-1/4"></span>
             </div>
             </>
             ) : (
             <>
             <div className="mt-8">
-                <a href='/'>
+                <a href='/1337-events/'>
                 <button className="bg-gray-700 text-white font-bold py-2 px-4 w-full rounded hover:bg-gray-600">Login</button>
                 </a>
             </div>
             <div className="mt-4 flex items-center justify-between">
                 <span className="border-b w-1/5 md:w-1/4"></span>
-                <a href="/Register" className="text-xs text-gray-500 uppercase">or sign up</a>
+                <a href="/1337-events/Register" className="text-xs text-gray-500 uppercase">or sign up</a>
                 <span className="border-b w-1/5 md:w-1/4"></span>
             </div>
             </>
