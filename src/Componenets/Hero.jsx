@@ -24,7 +24,7 @@ function Hero() {
           Welcome to the 1337 Event Hub – Where Innovation Meets Talent!"
         </p>
         <a
-        href="/1337-events/Events"
+        href="/Events"
         className="z-10 mt-6 px-5 py-3 text-base font-medium text-center text-gray-950 bg-white rounded-lg hover:bg-gray-200"
           >
           Events

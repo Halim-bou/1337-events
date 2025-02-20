@@ -76,17 +76,17 @@ export default function Header({inLoginPage = 0}) {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="/1337-events/">
+          <Link color="foreground" href="/">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link aria-current="page" color="foreground" href="/1337-events/Events">
+          <Link aria-current="page" color="foreground" href="/Events">
             Events
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/1337-events/Blogs">
+          <Link color="foreground" href="/Blogs">
             Blogs
           </Link>
         </NavbarItem>
@@ -94,14 +94,14 @@ export default function Header({inLoginPage = 0}) {
       <NavbarContent justify="end">
   {inLoginPage !== 1 && (
     <NavbarItem className="rounded-full hover:bg-gray-200 focus:outline lg:flex">
-      <Button as={Link} href="/1337-events/Login" className="bg-slate-200 text-gray-900">
+      <Button as={Link} href="/Login" className="bg-slate-200 text-gray-900">
         Login
       </Button>
     </NavbarItem>
   )}
   {inLoginPage !== 2 && (
   <NavbarItem className="rounded-full hover:bg-gray-200 focus:outline flex">
-    <Button as={Link} href="/1337-events/Register" className="bg-slate-900 text-gray-100">
+    <Button as={Link} href="/Register" className="bg-slate-900 text-gray-100">
       Register
     </Button>
   </NavbarItem>
