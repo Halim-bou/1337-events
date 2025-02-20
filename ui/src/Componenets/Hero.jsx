@@ -23,15 +23,13 @@ function Hero() {
         <p className="text-xl z-50 text-white max-w-3xl mx-auto text-center">
           Welcome to the 1337 Event Hub – Where Innovation Meets Talent!"
         </p>
-        <button className="z-10 mt-6 px-5 py-3 text-base font-medium text-center text-gray-950 bg-white rounded-lg hover:bg-gray-200">
+        <a
+        href="/Events"
+        className="z-10 mt-6 px-5 py-3 text-base font-medium text-center text-gray-950 bg-white rounded-lg hover:bg-gray-200"
+          >
           Events
-        </button>
+        </a>
       </div>
-
-      {/* <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="text-center mb-16"></div>
-      </div> */}
-      <div className=""></div>
     </div>
   );
 }

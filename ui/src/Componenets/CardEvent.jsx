@@ -16,7 +16,7 @@ function CardEvent({ event }) {
           color="blue-gray"
           className="relative h-56 rounded-md bg-cover mx-2 my-2 object-contain"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80')",
+            backgroundImage: `url(${event.imgUrl})`,
             backgroundSize: "cover", // Makes the background cover the entire element
             backgroundPosition: "center",
           }}

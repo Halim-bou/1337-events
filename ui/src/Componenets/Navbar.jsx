@@ -25,13 +25,15 @@ export const AcmeLogo = () => {
   );
 };
 
-export default function Header() {
+export default function Header({inLoginPage = 0}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const menuItems = [
-    "Help & Feedback",
+    "Home",
+    "Events",
+    "Blogs",
     "Sign Up",
   ];
 
@@ -74,33 +76,35 @@ export default function Header() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
-            About us
+          <Link color="foreground" href="/">
+            Home
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link aria-current="page" color="foreground" href="#">
+          <Link aria-current="page" color="foreground" href="/Events">
             Events
           </Link>
         </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
+        <NavbarItem isActive>
+          <Link color="foreground" href="/Blogs">
             Blogs
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="border broder-gray-200 rounded-full hover:bg-gray-200 focus:outline lg:flex">
-          <Button as={Link} href="#">
-            Sign in
-          </Button>
-        </NavbarItem>
-        <NavbarItem className="border broder-slate-400 rounded-full hover-gray-200 hover:bg-gray-200 focus:outline hidden lg:flex ">
-          <Button as={Link}  href="#" className="bg-blue-950 text-gray-100 ">
-            Sign Up
-          </Button>
-        </NavbarItem>
-      </NavbarContent>
+  {inLoginPage !== 1 && (
+    <NavbarItem className="rounded-full hover:bg-gray-200 focus:outline lg:flex">
+      <Button as={Link} href="/Login" className="bg-slate-200 text-gray-900">
+        Sign in
+      </Button>
+    </NavbarItem>
+  )}
+  <NavbarItem className="rounded-full hover:bg-gray-200 focus:outline hidden lg:flex">
+    <Button as={Link} href="#" className="bg-slate-900 text-gray-100">
+      Sign Up
+    </Button>
+  </NavbarItem>
+</NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
